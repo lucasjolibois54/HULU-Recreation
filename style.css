@@ -1,5 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
 
-html, body {
+*{
+    box-sizing: border-box; /* does so that when you add padding to an element it doesn't affect the width*/
+    margin: 0;
+    padding: 0;
+}
+
+html, 
+body {
     font-family: 'Rubik', sans-serif;
+    background-color: black;
+    color: #fff;
+    line-height: 1.7;
+    overflow-x: hidden; /* so that we don't have any scroll bar on the x axe, so the horisontal*/
+}
+
+/* DEFAULT STYLE*/
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ccc;
+}
+
+ul{
+    list-style-type: none; /*removes the bullet points*/
+}
+
+img{
+    width: 100%;
+}
+
+
+.header{
+    height: 530px;
+    background: url(/img/header.jpg)
+    no-repeat center center / cover; /* we don't want the background to repeat, and we want it to be center center, and to cover that page*/
+}
+
+.header .logo{
+    width: 270px;
+    margin: 20px;
 }
