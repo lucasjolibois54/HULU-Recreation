@@ -33,6 +33,11 @@ img{
     width: 100%;
 }
 
+h3{
+    font-size: 26px;
+    font-weight: 300;
+}
+
 h4{
     color: #00ed82;
     font-size: 13px;
@@ -59,10 +64,30 @@ h4{
     opacity: 0.8;
 }
 
+.btn-outline{
+    background: none;
+    color: #fff;
+    border: 2px solid #fff
+}
+
+.btn-outline:hover{
+    color: #fff;
+    border-color: #ccc;
+    transition: 0.2s;
+}
+
 .legal-text{
     font-size: 10px;
     color: #ccc;
     margin-top: 20px;
+}
+
+.sub-link{
+    display: block;
+    color: #ccc;
+    font-size: 12px;
+    margin-top: 5px;
+    text-decoration: underline;
 }
 
 /*STYLING FOR THE HERO SECTION*/
@@ -111,6 +136,24 @@ h4{
     margin: 25px 0px;
 }
 
+/*SUB HEADER*/
+.sub-header{
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    gap: 40px;
+    align-items: center;
+    padding: 30px 40px;
+    background: -webkit-linear-gradient(right, #0f495c, #0d3640, #08141f);
+}
+
+.sub-header > div:last-of-type{ /*this targets the last type of div elements in the class sub-header*/
+    justify-self: end;
+    align-self: end;
+}
+
+.sub-header > div:last-of-type .sub-link{
+    text-align: center;
+}
 /*media queries*/
 
 @media (max-width: 768px){
